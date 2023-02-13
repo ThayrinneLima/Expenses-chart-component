@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    font-family: 'DM Sans';
+    background-color: hsl(27, 66%, 92%);
+}
+
+.topo{
+    width: 40%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    margin: 16px;
+    background-color: hsl(10, 79%, 65%);
+    padding: 16px;
+    
+}
+
+.LeftTopo{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: hsl(27, 66%, 92%);
+    row-gap: 8px;
+    margin: 0 16px;
+
+}
+
+.textTopo{
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+.numberTopo{
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+.LogoTopo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 16px;
+
+}
+
+.card{
+    width: 40%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #ffffffe7;
+}
+
+.titleCard{
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(25, 47%, 15%);
+}
+
+.grafico{
+    
+    height: 170px;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 8px;
+}
+.bars{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+.graphicBar{
+    width:8%;
+    border-radius: 4px;
+    background-color: hsl(10, 79%, 65%);
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+}
+.graphicBar:hover{
+    background-color: hsla(10, 79%, 65%, 0.591);
+}
+.graphicBar:hover > .textBar{
+    display: flex;
+    opacity: 1!important;
+}
+.active{
+    background-color: hsl(186, 34%, 60%);
+}
+.active:hover{
+    background-color: hsla(186, 34%, 60%, 0.5);
+}
+
+.textBar{
+    transition: 0.4s ease-in-out;
+    background-color: hsl(25, 47%, 15%);
+    width: 170%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color:hsl(33, 100%, 98%);
+    border-radius: 4px;
+    margin-left: -35%;
+    margin-top: -100%;
+    padding: 6px;
+}
+.week{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: hsl(28, 10%, 53%);
+
+}
+.day{
+    width:8%;
+    
+    text-align: center;
+}
+hr{
+    margin: 0 16px;
+    background-color: hsla(28, 10%, 53%, 0.447);
+    height: 1px;
+    border: none;
+    
+}
+.total{
+    margin: 0 16px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.leftTotal{
+    display: flex;
+    flex-direction: column;
+}
+
+.rigthTotal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.textTotal{
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+.numberTotal{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 30pt;
+}
+
+.numberTotal2{
+    display: flex;
+    justify-content: flex-end;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 13pt;
+}
+
+
+
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 8px;
+    font-size: 12px; 
+    text-align: center; 
+    color:hsl(25, 47%, 15%);
+    font-family: 'DM Sans';
+    font-weight: 700;
+}
